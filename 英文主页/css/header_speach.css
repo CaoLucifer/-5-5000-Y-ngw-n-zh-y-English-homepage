@@ -1,0 +1,255 @@
+
+.banner {
+	margin:0 auto;
+	width: 1600px;
+	height: 300px;
+	clear: both;
+    text-align: left;
+    position: relative;
+    z-index: 1;
+}
+
+
+#main_box {
+	height: 100%;
+    overflow: hidden;
+    background: url(../images/bg.jpg);
+    padding: 0px 0px 40px 0px;
+}
+
+#main_box .main_content {
+	clear: both;
+    overflow: hidden;
+    width: 1100px;
+    margin:0 50px 0 50px;
+    margin: 0px auto;
+    position: relative;
+    padding: 58px 0px 0px 0px;
+}
+
+.now_location {
+    height: 28px;
+    width: 248px;
+    overflow: hidden;
+    position: absolute;
+    top: 15px;
+    left: 0px;
+    font-size: 14px;
+    line-height: 28px;
+    color: #999;
+}
+.now_location a {
+    color: #999;
+    line-height: 28px;
+    text-decoration: none;
+}
+.now_location a:hover {
+    color: rgb(255, 68, 0);
+    text-decoration: underline;
+}
+
+.left_content {
+	float: left;
+    width: 215px;
+    height: 323px;
+    margin: 0 0px;
+    overflow: hidden;
+    text-align: left;
+    background: red;
+}
+
+.left_content .nav_title {
+    height: 68px;
+    text-align: center;
+    position: relative;
+    padding: 0px;
+    overflow: hidden;
+    background: url(../images/xxgk.jpg) 0px 0px no-repeat;
+}
+
+.x {
+    display: block;
+    float: left;
+    width: 40px;
+    text-align: right;
+    color: rgb(255, 255, 255);
+    font-size: 56px;
+    line-height: 68px;
+    font-family: "华文仿宋";
+    padding-left: 10px;
+    overflow: hidden;
+}
+
+.nav_tr {
+    clear: both;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-family: "微软雅黑";
+    margin-left: 51px;
+    text-align: left;
+    color: #fff;
+}
+
+.nav_tr .nav_tr1 {
+    display: block;
+    height: 26px;
+    line-height: 26px;
+    font-size: 26px;
+    overflow: hidden;
+    margin-top: 13px;
+}
+
+.nav_tr .nav_tr2 {
+    display: block;
+    height: 15px;
+    line-height: 15px;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.nav_menus {
+    background: white;
+}
+
+.nav_menus .nav_a {
+    display: block;
+    line-height: 50px;
+    height: 50px;
+    padding-left: 20px;
+    margin-right:10px;
+    color: #000;
+    text-decoration: none;
+    text-align: left;
+    background: url(../images/rt1.png) no-repeat right center;
+    font-size: 15px;
+    font-family: "Microsoft YaHei";
+    border-bottom: 1px #EEE solid;
+}
+.nav_menus  .nav_a1 {
+    color: #F40;
+    background: url(../images/rt2.png) no-repeat right center;
+}
+
+.right_content {
+	float: right;
+    width: 790px;
+    padding: 10px 35px;
+    margin: 0 0px;
+    overflow: hidden;
+    text-align: left;
+    border: 1px #DEDEDE solid;
+    background: white;
+}
+
+.right_tile {
+    height: 47px;
+    border-bottom: 1px #EEE solid;
+}
+.right_tile span {
+    font-size: 32px;
+    color: #FF9D54;
+    line-height: 47px;
+    padding: 0px 10px;
+    font-family: "微软雅黑";
+}
+
+.right_main_content {
+    width: 790px;
+    min-height: 300px;
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.gg {
+    line-height: 2.0;
+    font-size: 1.1em;
+    padding: 18px 10px 10px 10px;
+    text-align: left;
+}
+
+
+#footer {
+    width: 100%;
+    height: 144px;
+    background: url(../images/bottom_bg.png) repeat-x 0 0;
+}
+
+.middle_box #about {
+    width: 100%;
+    height: 32px;
+    margin: 0 auto;
+}
+
+#about {
+    color: #606060;
+    text-align: center;
+    padding: 5px;
+}
+
+.web_inform {
+    clear:both;
+    overflow: hidden;
+    width: 1100px;
+    margin: 0px auto;
+    padding: 20px 50px 0px 50px;
+}
+
+.web_inform li {
+    float: left;
+    width: 33.3%;
+    font-family: "宋体"
+}
+.web_inform li p {
+    text-align: left;
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    color: #5F97CE;
+    overflow: hidden;
+}
+
+.web_inform li span {
+    display: block;
+    text-align: left;
+    height: 25px;
+    line-height: 25px;
+    color: #5F97CE;
+    font-size: 12px;
+    overflow: hidden;
+}
+
+.web_inform li span a {
+    color: #5F97CE;
+    text-decoration: none;
+}
+
+.web_inform li span a:hover {
+    color:#888;
+    text-decoration: underline;
+}
+.last_li {
+    border-left: 1px #5F97CE solid;
+    height: 110px;
+}
+.web_inform .last_li span {
+    display: block;
+    float: left;
+    height: 110px;
+    text-align: center;
+    margin-left: 75px;
+}
+.last_li span img {
+    display: block;
+    height: 80px;
+    width: 80px;
+}
+#about a {
+    color: #333;
+    text-decoration: none;
+}
+#about a:hover {
+    color:#F07A07;
+    text-decoration: underline;
+}

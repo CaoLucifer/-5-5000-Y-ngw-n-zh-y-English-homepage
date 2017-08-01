@@ -561,7 +561,6 @@ body {
 	height: 318px;
 	margin-bottom: 15px;
 	float: right;
-	/*background: red;*/
 }
 
 .modle_title {
@@ -693,8 +692,13 @@ body {
 
 .web_inform li span a {
 	color: #5F97CE;
+	text-decoration: none;
 }
 
+.web_inform li span a:hover {
+	color:#888;
+	text-decoration: underline;
+}
 .last_li {
 	border-left: 1px #5F97CE solid;
 	height: 110px;
@@ -713,7 +717,9 @@ body {
 }
 #about a {
 	color: #333;
+	text-decoration: none;
 }
 #about a:hover {
 	color:#F07A07;
+	text-decoration: underline;
 }
