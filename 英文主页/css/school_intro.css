@@ -29,7 +29,6 @@
 
 .now_location {
     height: 28px;
-    width: 248px;
     overflow: hidden;
     position: absolute;
     top: 15px;
@@ -51,11 +50,10 @@
 .left_content {
 	float: left;
     width: 215px;
-    height: 323px;
+    height: 374px;
     margin: 0 0px;
     overflow: hidden;
     text-align: left;
-    background: red;
 }
 
 .left_content .nav_title {

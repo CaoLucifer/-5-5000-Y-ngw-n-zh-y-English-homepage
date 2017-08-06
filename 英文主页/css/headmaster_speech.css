@@ -29,7 +29,6 @@
 
 .now_location {
     height: 28px;
-    width: 248px;
     overflow: hidden;
     position: absolute;
     top: 15px;
@@ -55,7 +54,6 @@
     margin: 0 0px;
     overflow: hidden;
     text-align: left;
-    background: red;
 }
 
 .left_content .nav_title {
@@ -252,4 +250,63 @@
 #about a:hover {
     color:#F07A07;
     text-decoration: underline;
+}
+
+
+.gg ul {
+    clear: both;
+    overflow: hidden;
+}
+
+.gg ul .tw {
+    height: 70px;
+    border-bottom: 1px dashed #cccccc;
+    margin-bottom: 5px;
+    padding-bottom: 8px;
+    list-style: none;
+}
+
+.gg ul .tis {
+    height: 27px;
+    line-height: 27px;
+    font-size: 12px;
+}
+.Title {
+    font-size: 16px;
+    font-weight: bold;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    display: block;
+}
+
+.Title  a {
+    color: #333;
+    text-decoration: none;
+}
+
+.tits {
+    float: left;
+    width: 350px;
+    overflow: hidden;
+    background: url(../images/pic_9.jpg) no-repeat left center;
+    padding-left: 10px;
+    height: 27px;
+    line-height: 27px;
+}
+.tits a {
+    color: #333;
+    text-decoration: none;    
+}
+.dates {
+    float: right;
+}
+
+.gg ul  a:hover {
+    color: #F07A07;
+    text-decoration:underline;
+}
+
+.tw p {
+    text-indent: 2em;
 }
