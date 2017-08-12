@@ -1,0 +1,149 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+body {
+	font:14px "微软雅黑";
+	background: #353c47;
+}
+
+/*头部样式*/
+#head {
+	background: url(../images/bg.png ) repeat-x;
+	width: 100%;
+	height: 150px;
+}
+
+#head .head_box {
+	position:relative;
+	width: 1200px;
+	height: 150px;
+	margin: 0 auto;
+}
+
+#head .head_box .head_top {
+	width: 1200px;
+	height: 30px;
+	padding: 5px 0 5px 0;
+	line-height: 30px;
+	overflow: hidden;
+	color: #ffffff;	
+	clear: both;
+}
+#link{
+	height: 30px;
+	float: left;
+	font-size: inherit;
+} 
+#head .head_box .head_top  a{
+	color: #ffffff;
+	
+	text-decoration: none;
+}
+
+#head .head_box .head_top  a:hover{
+	text-decoration: underline;
+}
+
+.search_box {
+	width: 208px;
+	height: 30px;
+	float: right;
+	overflow: hidden;
+	position: relative;
+	top:1px;
+}
+
+#head .head_box .head_top #search {
+	width: 169px;
+	height: 25px;
+	padding: 0 5px 0 5px;
+	border: 0; 
+ 	background: #EEE;
+}
+
+#head .search_button {
+	width: 29px;
+	height: 25px;
+    border-width: 0px;
+    color: #fff;
+    position: absolute;
+    top: 3px;
+    background: url(../images/search.jpg) no-repeat;
+    vertical-align: middle;
+    float: right;
+    line-height: 25px;
+}
+
+.head_box #logo {
+	float: left;
+    height: 95px;
+    margin-top: 15px;
+    width: 270px;
+    overflow: hidden
+}
+
+#head #menu_box {
+	float: right;
+    height: 110px;
+    text-align: left;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0 0 0 10px;
+    line-height: 110px;
+}
+
+#head #menu_box .list {
+	position: relative;
+	width: 105px;
+	float: left;
+	text-align: center;
+}
+
+#head #menu_box .list .first_link {
+	display: block;
+    width: 90px;
+    color: white;
+    text-align: right;
+    font-size: 16px;
+    padding-right: 15px;
+    background: url(../images/Down.jpg) no-repeat right ;
+    font-family: Microsoft YaHei;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+
+#menu_box .list ul {
+	position: absolute;
+	left: 10px;
+	background: url(../images/nav_hover_bg.png) no-repeat center top;
+	padding-top: 7px;
+	display: none;
+	z-index: 2;
+}
+
+
+#menu_box .list ul li {
+	position: relative;
+    width: 110px;
+    height: 32px;
+    padding: 5px 0 0 0;
+    background-color: #002147;
+    text-align: center;
+}
+
+#menu_box .list ul  a {
+	display: block !important;
+    line-height: 32px;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    text-decoration: none;
+    font-weight: normal;
+
+}
