@@ -12,39 +12,42 @@ function addloadEvent(func){
 } 
 
 //鼠标滑过链接时箭头变向
-var first_link = document.getElementsByClassName("first_link");
-for(var i=0;i<first_link.length;i++){
-	 first_link[i].index = i;
-	first_link[i].onmouseover = function(){
-		first_link[this.index].style.color = "#ffce6f";
-		first_link[this.index].style.background = "url(../images/up.jpg) no-repeat right";
-		var list = document.getElementsByClassName("list")[this.index];
-		var ul = list.getElementsByTagName('ul')[0];
-		ul.style.display = "block";
-	
-	}
-	first_link[i].onmouseout = function(){
-		first_link[this.index].style.color = "white";
-		first_link[this.index].style.background = "url(../images/Down.jpg) no-repeat right";
-		var list = document.getElementsByClassName("list")[this.index];
-		var ul = list.getElementsByTagName('ul')[0];
-		ul.style.display = "none";
+function trDropDown(){
+	var first_link = document.getElementsByClassName("first_link");
+	for(var i=0;i<first_link.length;i++){
+		 first_link[i].index = i;
+		first_link[i].onmouseover = function(){
+			first_link[this.index].style.color = "#ffce6f";
+			first_link[this.index].style.background = "url(../images/up.jpg) no-repeat right";
+			var list = document.getElementsByClassName("list")[this.index];
+			var ul = list.getElementsByTagName('ul')[0];
+			ul.style.display = "block";
+		
+		}
+		first_link[i].onmouseout = function(){
+			first_link[this.index].style.color = "white";
+			first_link[this.index].style.background = "url(../images/Down.jpg) no-repeat right";
+			var list = document.getElementsByClassName("list")[this.index];
+			var ul = list.getElementsByTagName('ul')[0];
+			ul.style.display = "none";
+		}
 	}
 }
-
 //隐藏的下拉框
-var ul_list = document.getElementsByClassName("ul_list");
-for (var i = 0; i< ul_list.length ; i++){
-	ul_list[i].index = i;
-	ul_list[i].onmouseover = function(){
-		ul_list[this.index].style.display = "block";
-	}
-	ul_list[i].onmouseout = function(){
-		ul_list[this.index].style.display = "none";
+function dropDown(){
+	var ul_list = document.getElementsByClassName("ul_list");
+	for (var i = 0; i< ul_list.length ; i++){
+		ul_list[i].index = i;
+		ul_list[i].onmouseover = function(){
+			ul_list[this.index].style.display = "block";
+		}
+		ul_list[i].onmouseout = function(){
+			ul_list[this.index].style.display = "none";
+		}
 	}
 }
-
 //轮播图
+
 function zidong(){
 	var lunbo = document.getElementById("lunbo");
 	if(!lunbo.style.left)
@@ -59,7 +62,7 @@ function zidong(){
 	xpos = xpos -1200;
 	}
 	lunbo.style.left = xpos + 'px';
-}
+}	
 setInterval("zidong()",10000);
 
 function clickEvent(){
@@ -84,3 +87,5 @@ banner.onmouseout = function(){
 }
 
 
+addloadEvent(trDropDown);
+addloadEvent(dropDown);
