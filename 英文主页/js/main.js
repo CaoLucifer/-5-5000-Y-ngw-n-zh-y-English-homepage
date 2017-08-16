@@ -1,91 +1,77 @@
-//动态加载事件函数
-function addloadEvent(func){
-	var oldonload =window.onload;
-	if(typeof window.onload !='function'){
-		window.onload=func;
-	}else{
-		window.onload=function(){
-			oldonload();
-			func();
-		}
-	}
-} 
-
-//鼠标滑过链接时箭头变向
-function trDropDown(){
-	var first_link = document.getElementsByClassName("first_link");
-	for(var i=0;i<first_link.length;i++){
-		 first_link[i].index = i;
-		first_link[i].onmouseover = function(){
-			first_link[this.index].style.color = "#ffce6f";
-			first_link[this.index].style.background = "url(../images/up.jpg) no-repeat right";
-			var list = document.getElementsByClassName("list")[this.index];
-			var ul = list.getElementsByTagName('ul')[0];
-			ul.style.display = "block";
-		
-		}
-		first_link[i].onmouseout = function(){
-			first_link[this.index].style.color = "white";
-			first_link[this.index].style.background = "url(../images/Down.jpg) no-repeat right";
-			var list = document.getElementsByClassName("list")[this.index];
-			var ul = list.getElementsByTagName('ul')[0];
-			ul.style.display = "none";
-		}
-	}
-}
-//隐藏的下拉框
-function dropDown(){
-	var ul_list = document.getElementsByClassName("ul_list");
-	for (var i = 0; i< ul_list.length ; i++){
-		ul_list[i].index = i;
-		ul_list[i].onmouseover = function(){
-			ul_list[this.index].style.display = "block";
-		}
-		ul_list[i].onmouseout = function(){
-			ul_list[this.index].style.display = "none";
-		}
-	}
-}
+//下拉框的显示
+$(document).ready(function(){
+	$(".first_link").mouseover(function(){
+		$(this).removeClass("first_link").addClass("first_link1");
+		$(this).siblings("ul").show();
+	});
+	$(".first_link").mouseout(function(){
+		$(this).removeClass("first_link1").addClass("first_link");
+			$(this).siblings("ul").hide();
+	});
+	
+	$(".ul_list").mouseenter(function(){
+		$(this).css("display","block");
+	});
+	$(".ul_list").mouseleave(function(){
+		$(this).slideUp("fast");
+	});
+});	
 //轮播图
-
 function zidong(){
-	var lunbo = document.getElementById("lunbo");
+	var left = $("#lunbo").css("left");
+	var xpos = parseInt(left);
+	if(xpos==-1200)
+		xpos=0;
+	else
+		xpos = xpos -1200;
+	$("#lunbo").css("left",xpos + 'px');
+};
+var tt=setInterval("zidong()",10000);
+window.onload = tt;
+function clickEvent(){
+	var a = setInterval(zidong(),1000);
+	window.clearInterval(a);
+}
+//图片区的箭头
+$(document).ready(function(){
+	$("#banner").mouseover(function(){
+		$(".tubiao").css("visibility","visible").click(clickEvent);
+	});
+	$("#banner").mouseout(function(){
+		$(".tubiao").css("visibility","hidden");
+	});
+	$("#point,#point2").mouseover(clickEvent);
+});
+//左侧导航框
+$(document).ready(function(){
+	$(".nav_a").mouseover(function(){
+		$(this).css({
+			"color": "#f40",
+			"background": "url(../images/rt2.png) no-repeat right center"
+		});
+	});
+	$(".nav_a").mouseout(function(){
+		$(this).css({
+			"color": "#000",
+			"background": "url(../images/rt1.png) no-repeat right center"
+		});
+	});
+});
+
+function zidong2(){
+	var lunbo = document.getElementById("lunbo_ul");
 	if(!lunbo.style.left)
 		lunbo.style.left = "0px";
 	var xpos = parseInt(lunbo.style.left);
-	if(xpos==-1200)
+	if(xpos==-6000)
 	{
 		xpos=0;
 	}
 	else
 	{
-	xpos = xpos -1200;
+	xpos = xpos -200;
 	}
 	lunbo.style.left = xpos + 'px';
-}	
-setInterval("zidong()",10000);
-
-function clickEvent(){
-	var a = setInterval(zidong(),1000);
-	window.clearInterval(a);
-
 }
+setInterval("zidong2()",1600);
 
-//图片区的箭头
-var banner = document.getElementById("banner");
-banner.onmouseover = function(){
-	var tubiao = document.getElementsByClassName("tubiao");
-	for(var i = 0 ;i<tubiao.length; i++){
-		tubiao[i].style.visibility = "visible";
-	}
-}
-banner.onmouseout = function(){
-	var tubiao = document.getElementsByClassName("tubiao");
-	for(var i = 0 ;i<tubiao.length; i++){
-		tubiao[i].style.visibility = "hidden";
-	}
-}
-
-
-addloadEvent(trDropDown);
-addloadEvent(dropDown);

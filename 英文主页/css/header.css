@@ -117,8 +117,20 @@ body {
     text-decoration: none;
 }
 
+#head #menu_box .list .first_link1 {
+	display: block;
+    width: 90px;
+    color: #ffce6f;
+    text-align: right;
+    font-size: 16px;
+    padding-right: 15px;
+    background: url(../images/up.jpg) no-repeat right ;
+    font-family: Microsoft YaHei;
+    font-weight: normal;
+    text-decoration: none;
+}
 
-#menu_box .list ul {
+#menu_box .list .ul_list {
 	position: absolute;
 	left: 10px;
 	background: url(../images/nav_hover_bg.png) no-repeat center top;
@@ -126,8 +138,6 @@ body {
 	display: none;
 	z-index: 2;
 }
-
-
 #menu_box .list ul li {
 	position: relative;
     width: 110px;
@@ -145,5 +155,4 @@ body {
     overflow: hidden;
     text-decoration: none;
     font-weight: normal;
-
 }
