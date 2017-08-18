@@ -128,13 +128,7 @@
 }
 
 
-
-.nav_menus  .nav_a1 {
-    color: #F40;
-    background: url(../images/rt2.png) no-repeat right center;
-}
-
-.nav_menus .nav_ahover {
+.nav_a2 {
     display: block;
     line-height: 50px;
     height: 50px;
@@ -147,6 +141,11 @@
     font-size: 15px;
     font-family: "Microsoft YaHei";
     border-bottom: 1px #EEE solid;
+}
+
+.nav_menus  .nav_a1 {
+    color: #F40;
+    background: url(../images/rt2.png) no-repeat right center;
 }
 
 .right_content {
