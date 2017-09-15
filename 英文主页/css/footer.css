@@ -7,9 +7,10 @@
 }
 
  #about {
-	width: 100%;
+	width: 1200px;
 	height: 32px;
 	margin: 0 auto;
+	background-color: #353c47;
 }
 
 #about {

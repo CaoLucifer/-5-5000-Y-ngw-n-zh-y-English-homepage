@@ -9,6 +9,7 @@ li {
 body {
 	font:14px "微软雅黑";
 	background: #353c47;
+	width:100%;
 }
 
 /*头部样式*/
@@ -131,12 +132,19 @@ body {
 }
 
 #menu_box .list .ul_list {
+	box-sizing: border-box;
 	position: absolute;
 	left: 10px;
-	background: url(../images/nav_hover_bg.png) no-repeat center top;
-	padding-top: 6px;
-	display: none;
+	background: url(../images/nav_hover_bg.png) no-repeat 0 top;
+	padding-top: 0;
+	height: 0;
+	overflow: hidden;
 	z-index: 2;
+	transition: all 0.8s ease-out;
+}
+#menu_box .list:hover ul{
+	height: 600px;
+	padding-top: 6px;
 }
 #menu_box .list ul li {
 	position: relative;

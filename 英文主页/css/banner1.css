@@ -9,6 +9,13 @@
 	
 }
 
+#nob{
+	position: absolute;
+	left: 50%;	
+	bottom: 15px;
+	margin-left: -13px;
+}
+
 #point {
 	z-index: 2;
 	display: block;
@@ -22,8 +29,6 @@
     filter: alpha(opacity=90);
     opacity: 0.9;
     position: relative;
-    top: 470px;
-    left: 600px;
 }
 
 #point2 {
@@ -32,7 +37,7 @@
     float: left;
     width: 10px;
     height: 10px;
-    margin-right: 10px;
+    margin-right: 8px;
     border-radius: 5px;
     background-color: #ccc;
     margin-right: 8px;
@@ -40,8 +45,6 @@
     filter: alpha(opacity=90);
     opacity: 0.9;
     position: relative;
-    top: 470px;
-    left: 600px;
 }
 #point2:hover{
 	background:#fff;

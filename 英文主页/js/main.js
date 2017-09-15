@@ -1,20 +1,13 @@
 $(document).ready(function(){
 	$(".first_link").mouseover(function(){
 		$(this).removeClass("first_link").addClass("first_link1");
-		$(this).siblings("ul").show();
 	});
 	$(".first_link").mouseout(function(){
 		$(this).removeClass("first_link1").addClass("first_link");
-		$(this).siblings("ul").hide();
 	});
 	
-	$(".ul_list").mouseenter(function(){
-		$(this).css("display","block");
-	});
-	$(".ul_list").mouseleave(function(){
-		$(this).slideUp("fast");
-	});
-
+	$(".select_head").bind("click",choose);
+	
 	$("#banner").mouseover(function(){
 		$(".tubiao").css("visibility","visible").click(clickEvent);
 	});
@@ -25,7 +18,7 @@ $(document).ready(function(){
 
 	$(".nav_a").hover(handleIn,handleOut);
 
-	setInterval("zidong()",10000);
+	setInterval("zidong()",3000);
 
 	setInterval("zidong2()",1600);
 });	
@@ -65,5 +58,15 @@ function zidong2(){
 	}
 	$("#lunbo_ul").css("left", xpos + 'px');
 }
-
+//底部选项卡
+function choose(){
+	var  selectcard= $(".select-card");
+	var index = $(".select_head").index($(this));
+	for(var i = 0 ; i < selectcard.length ; i ++){
+		selectcard.eq(i).css("display","none");
+	}
+	$(".select_head a").css("color","#000000").find("em").css("background","url(../images/jt.png) no-repeat center center");
+	$(this).find("a").css("color","#FF4400").find("em").css("background","url(../images/jt1.png) no-repeat center center");
+	selectcard.eq(index).css("display","block");
+	}
 
